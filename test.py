@@ -82,7 +82,12 @@ def binary_search_rec(ar, item, low, high):
 
     return None
 
-
+def bubble_sort(ar):
+    for i in len(ar) - 1:
+        for j in len(ar) - 1:
+            if ar[j] > ar[j + 1]:
+                ar[j], ar[j + 1] = ar[j + 1], ar[j]
+                    
 
 
 list = [2, 3, 4, 22, 11, 10, 4]
